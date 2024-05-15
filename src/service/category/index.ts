@@ -27,7 +27,7 @@ interface Category{
 export interface StoreCategory {
     isLoader:boolean;
     data:any[];
-    totlCount:number;
+    totalCount:number;
     getData: (params:getParams)=> Promise <any>;
     postData: (data:postData)=> Promise <any>;
     deleteData: (id:string)=> Promise <any>;

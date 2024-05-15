@@ -231,7 +231,7 @@ export default function BasicModal() {
                     name="made_in"
                     className="w-full mb-3 border py-5 "
                   >
-                    {["Uzbekistan" , "China" , "Turkiy"  ].map((item) => (
+                    {["Uzbekistan" , "China" , "Tourkey"  ].map((item) => (
                       <option key={item} value={item}>
                         {item}
                       </option>

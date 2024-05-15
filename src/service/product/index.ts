@@ -39,7 +39,7 @@ interface Product{
 export interface StoreProduct {
     isLoader:boolean;
     data:any[];
-    totlCount:number;
+    totalCount:number;
     getProduct: (params:getParams)=> Promise <any>;
     postProduct: (data:PostData)=> Promise <any>;
     deleteProduct: (id:string)=> Promise <any>;

@@ -24,7 +24,6 @@ export default function BasicModal({ dataId }: any) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  /// my code start <-----------------------------
   const postMedia = async (data: any) => {
     try {
       const token = getCookies("token");
@@ -60,7 +59,6 @@ export default function BasicModal({ dataId }: any) {
 
  
 
-  // my code end <--------------------------------
 
   return (
     <div>
@@ -82,9 +80,6 @@ export default function BasicModal({ dataId }: any) {
               accept="image/*"
               onChange={handleImageChange}
             />
-            {/* <button className="bg-bulu rounded-md py-3 w-full text-center  text-white font-bold ">
-              Upload
-            </button> */}
           </div>
         </Box>
       </Modal>

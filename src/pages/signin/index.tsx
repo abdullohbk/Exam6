@@ -29,7 +29,6 @@ const index = () => {
     };
 
 
-     // Validation scheme Login  for the input field type ------------------------------
    const schemaLogin = Yup.object().shape({
     email: Yup.string().email("Email invalit ").required("Email is required"),
     password: Yup.string().matches(
@@ -37,7 +36,6 @@ const index = () => {
         "Password must contain at least one uppercase and be between 8 to 20 characters long"
       ).required("Password is required")
   });
-  //==========================================
 
 
   const  handelSubmit =async(values :initialValues)=>{

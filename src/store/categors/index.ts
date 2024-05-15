@@ -7,7 +7,7 @@ import { category ,StoreCategory } from '@category';
 const useCategoryStore = create <StoreCategory> ((set)=>({
     isLoader: false,
     data: [],
-    totlCount: 0,
+    totalCount: 0,
     getData : async(data)=>{
         try{
            set({isLoader: true})
@@ -15,7 +15,7 @@ const useCategoryStore = create <StoreCategory> ((set)=>({
         //    console.log(respons)
            if(respons.status === 200){
                set({data: respons?.data?.categories});
-               set({totlCount: respons?.data?.total_count})
+               set({totalCount: respons?.data?.total_count})
            }
            set({isLoader: false})
        }catch(error){

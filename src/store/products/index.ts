@@ -7,7 +7,7 @@ import { product ,StoreProduct } from '@product';
 const useProductStore = create <StoreProduct> ((set)=>({
     isLoader: false,
     data: [],
-    totlCount: 0,
+    totalCount: 0,
     getProduct : async(data)=>{
         try{
            set({isLoader: true})
@@ -15,7 +15,7 @@ const useProductStore = create <StoreProduct> ((set)=>({
         //    console.log(respons)
            if(respons.status === 200){
                set({data: respons?.data?.products});
-               set({totlCount: respons?.data?.total_count})
+               set({totalCount: respons?.data?.total_count})
            }
            set({isLoader: false})
        }catch(error:any){

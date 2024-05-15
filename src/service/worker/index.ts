@@ -36,7 +36,7 @@ interface Worker{
 export interface StoreWorker {
     isLoader:boolean;
     data:any[];
-    totlCount:number;
+    totalCount:number;
     getData: (params:getParams)=> Promise <any>;
     postData: (data:PostData)=> Promise <any>;
     deleteData: (id:string)=> Promise <any>;

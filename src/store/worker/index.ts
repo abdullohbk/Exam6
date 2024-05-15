@@ -7,7 +7,7 @@ import { worker ,StoreWorker } from '@worker';
 const useWorkerStore = create <StoreWorker> ((set)=>({
     isLoader: false,
     data: [],
-    totlCount: 0,
+    totalCount: 0,
     getData : async(data)=>{
         try{
            set({isLoader: true})
@@ -15,7 +15,7 @@ const useWorkerStore = create <StoreWorker> ((set)=>({
         //    console.log(respons)
            if(respons.status === 200){
                set({data: respons?.data?.user});
-               set({totlCount: respons?.data?.totcal_count})
+               set({totalCount: respons?.data?.totcal_count})
            }
            set({isLoader: false})
        }catch(error:any){
